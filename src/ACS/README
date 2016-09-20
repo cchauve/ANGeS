@@ -1,0 +1,32 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+# Scripts to handle unique markers
+acs_unique.py: file containing common intervals and adjacencies computation functions
+               common intervals are computed as described in SIAM J. Discrete Mathematics,22:1022-1039. 2008.
+               if a pair of genomes has unequal marker content, the markers are first filtered to 
+               keep only the one common to both genomes, prior to computing adjacencies and common intervals
+               both linear and circular genomes can be considered
+	       the concept of reliable adjacency is described in J. Comput. Biol. 17:1097-1112. 2010. 
+
+ACS_compute_supported_adjacencies_unique.py: computes supported adjacencies between two species
+ACS_compute_reliable_adjacencies_unique.py:  computes reliable adjacencies betwen three species
+ACS_compute_common_intervals_unique.py:      computes common intervals to two species
+
+# Scripts to handle unique markers
+acs_nonunique.py: file containing common intervals and adjacencies computation functions
+               common intervals are computed as described in CPM 2004, LNCS 3109:347–358, 2004
+	       markers are NOT filtered to keep common markers
+               both linear and circular genomes can be considered
+
+ACS_compute_supported_adjacencies_nonunique.py: computes supported adjacencies between two species
+ACS_compute_common_intervals_nonunique.py:      computes common intervals to two species
+
+# Additional scripts
+
+acs.py: general manipulation of ACS, joining files, adding missing markers and telomeric ACS
+
+ACS_add_missing_markers.py: completing ACS if markers are not universal
+ACS_add_telomeres.py: add telomeric ACS
+ACS_join.py: join ACS files into a unique file

@@ -1,0 +1,15 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+# Computing a Hamming distance matrix from ACS with X-markers
+hamming_matrix.py
+SERIATION_compute_Hamming_matrix.py: 
+
+# Computing a PQ-tree from ACS, possibly with X markers, using spectral seriation
+pqtrees.py:  functions on PQ-trees
+spectral.py: functions on spectral seriation
+SERIATION_compute_PQtree_correlation_matrix.py:            for ACS with no X-markers
+SERIATION_compute_PQtree_dotproduct_correlation_matrix.py: for ACS with X-markers
+
+

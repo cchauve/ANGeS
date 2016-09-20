@@ -1,0 +1,37 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+# General C1P/PQ-Trees 
+c1p.py:  functions related to the linear C1P but branch-and-bound
+cc1p.py: functions related to the circular C1P but branch-and-bound
+mc1p.py: functions related to the C1P with telomeres
+bab.py, babtester.py:  functions related to branch-and-bound algorithms
+part.py: functions related to partition refinement
+tree.py, pqtree.py: functions related to computing PQ-trees from sets of ACS
+stak.py: data structure for stacks
+
+# Linear C1P scripts
+C1P_check_C1P.py: checks if a set of ACS is C1P
+C1P_make_C1P_heuristic.py: computes a C1P subsets of ACS using a greedy heuristic
+C1P_make_C1P_branch_and_bound.py: computes a C1P subsets of ACS using a branch-and-bound
+
+# Circular C1P scripts
+C1P_check_circC1P.py: checks if a set of ACS is C1P
+C1P_make_circC1P_heuristic.py: computes a C1P subsets of ACS using a greedy heuristic
+C1P_make_circC1P_branch_and_bound.py: computes a C1P subsets of ACS using a branch-and-bound
+
+# C1P with telomeres scripts
+C1P_make_mC1P_branch_and_bound.py: computes a set of ACS and telomeric ACS that is mC1P using a
+				   branch-and-bound for ACS followed by a branch-and-bound for
+				   telomeric ACS
+C1P_make_mC1P_branch_and_bound_both.py: computes a set of ACS and telomeric ACS that is mC1P using a
+					unique branch-and-bound for all ACS
+C1P_make_mC1P_heuristic.py: computes a set of ACS and telomeric ACS that is mC1P using a greedy heuristic
+
+# PQ-trees
+C1P_compute_PQRtree.py:  computes a PQR-tree from a set of ACS
+C1P_compute_PQCRtree.py: computes a PQCR-tree from a set of ACS
+C1P_halve_PQRtree.py:    halves doubled markers in a PQ-tree with doubles markers
+
+

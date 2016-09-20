@@ -1,0 +1,8 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+# Master scripts
+params.py: reading parameters file
+anges_CAR.py: running ANGES in text mode using a parameter file
+anges_CAR_UI.py: running the interface of ANGES

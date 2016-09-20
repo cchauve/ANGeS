@@ -1,0 +1,36 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+This directory contains examples of computing ancestral genomes maps.
+
+fungal_genomes contains data taken from the paper (Gavranovic et al,
+Yeast ancestral genome reconstructions: the possibilities of
+computational methods II. J. Comput. Biol.  17:1097-1112. 2010).
+
+mammalian_genomes contains data taken from the papers (Ouangraoua et
+al., Reconstructing the architecture of the ancestral amniote
+genome. Bioinformatics 27(19):2664-2671. 2011) and (Gavranovic et
+al., Mapping ancestral genomes with massive gene loss: a matrix
+sandwich problem. Bioinformatics 27:i257-i265, proceedings of
+ISMB/ECCB 2011).
+
+plant_genomes contains data taken from (Murat F, Xu JH, Tannier E,
+Abrouk M, Guilhot N, Pont C, Messing J, Salse J (2010) Ancestral grass
+karyotype reconstruction unravels new mechanisms of genome shuffling
+as a source of plant evolution, Genome Research, vol. 20 pp.1545-1557).
+
+bacterial_genomes contains data from two clades: yersinia and burkholderia
+- Burkholderia blocks are gene families taken from Hogenom 6
+(http://pbil.univ-lyon1.fr/databases/hogenom/acceuil.php), and
+filtered to have exactly one gene per species in the ingroups, and
+at least one in the outgroups. The species tree is obtained by
+PhyML from a concatenate of 80 universal genes.
+
+README files in the different directories contain more details on the
+datasets.
+
+RUN_ALL.sh launches the computations of all examples.  TRACE_ALL.txt
+contains the trace of running all examples on a bi-processor desktop
+computer running Linux as OS (Linux 2.6.38-11-generic #48-Ubuntu),
+including running times recorded with the UNIX command time.

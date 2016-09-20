@@ -1,0 +1,6 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+MARKERS_double.py:         double markers; each marker is replaced by 2 markers, one for each extremity
+MARKERS_filter_species.py: filter markers in terms of universality and uniqueness 

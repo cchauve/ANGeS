@@ -1,0 +1,40 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+This directory contains examples of an ancestral genome computation
+for the Rice/Brachypodium ancestor, using Sorghum as an outgroup.
+
+To run the three computations, type
+python ../../src/MASTER/anges_CAR.py PARAMETERS_MONOCOTS_BAB 
+python ../../src/MASTER/anges_CAR.py PARAMETERS_MONOCOTS_TEL_BAB1
+python ../../src/MASTER/anges_CAR.py PARAMETERS_MONOCOTS_TEL_BAB2
+
+The three computations use a branch-and-bound approach. The fist one
+does not consider telomeric ACS. The two other ones follow the two
+different ways to consider telomeric ACS in a branch-and-bound
+context.
+
+The files
+PLANT_ANCESTOR/CARS/RICE_BRACHY_ANCESTOR_1_PQRTREE
+PLANT_ANCESTOR/CARS/RICE_BRACHY_ANCESTOR_2_PQRTREE
+PLANT_ANCESTOR/CARS/RICE_BRACHY_ANCESTOR_3_PQRTREE
+contains the ordered and oriented blocks of the ancestor from the three computations.
+
+The coordinates of each marker is found in monocots_tree_RB_ancestor
+The markers are described in (Murat F, Xu JH, Tannier E, Abrouk M,
+Guilhot N, Pont C, Messing J, Salse J (2010) Ancestral grass karyotype
+reconstruction unravels new mechanisms of genome shuffling as a source
+of plant evolution, Genome Research, vol. 20 pp.1545-1557).
+
+The 12 CARs obtained in
+PLANT_ANCESTOR/CARS/RICE_BRACHY_ANCESTOR_1_PQRTREE and
+PLANT_ANCESTOR/CARS/RICE_BRACHY_ANCESTOR_2_PQRTREE represent the
+ancestors of the 12 Rice chromosomes. There have been some subsequent
+local rearrangements in the Rice
+lineage. PLANT_ANCESTOR/CARS/RICE_BRACHY_ANCESTOR_3_PQRTREE provides
+additional evidence these 12 CARs are indeed 12
+proto-chromosomes. This set of three ancestors reconstructed using
+three methods illustrate the impact of considering telomeric ACS in
+computations.
+

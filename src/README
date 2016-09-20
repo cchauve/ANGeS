@@ -1,0 +1,15 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+COMMON:     general scripts used in several tasks
+TREES:      scripts related to species trees
+MARKERS:    scripts related to sets of markers
+ACS:        scripts related to computing ACS
+WEIGHT:     scripts related to weighting ACS
+C1P:        scripts related to computing ancestral genomes maps using the C1P 
+SERIATION:  scripts related to computing ancestral genomes maps using seriation
+MASTER:     main scripts
+
+Changes from version 1.0 to 1.01 are indicated in CHANGES files in
+each directory.

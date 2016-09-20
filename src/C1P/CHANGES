@@ -1,0 +1,2 @@
+Version 1.01
+cc1p.py: c1pmat = bm.BinaryMatrix() declared earlier in make_circC1P

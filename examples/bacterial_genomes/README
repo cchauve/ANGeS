@@ -1,0 +1,35 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+This directory contains examples of inferring the organization of two
+ancestral bactrial (circular) genomes.
+
+Markers (files MARKERS_BURKHOLDERIA_1 and MARKERS_BURKHOLDERIA_2) are
+obtained from gene families taken from Hogenom 6
+(http://pbil.univ-lyon1.fr/databases/hogenom/acceuil.php), and
+filtered to have exactly one gene per species in the ingroups, and at
+least one in the outgroups: they are ingroup-unique and universal.
+
+The species tree (files SPECIES_TREE_BURKHOLDERIA_1 and
+SPECIES_TREE_BURKHOLDERIA_2) is obtained by PhyML from a concatenate
+of 80 universal genes.
+
+Two ancestors are computed using supported adjacencies. The ancestral
+maps are obtrained using the greedy heuristic.
+
+(1) First ancestor: 
+python ../../src/MASTER/anges_CAR.py PARAMETERS_BURKHOLDERIA_1
+or 
+python ../../src/MASTER/anges_CAR_UI.py &
+then load the parameters file PARAMETERS_BURKHOLDERIA_1 and run the script
+
+The results will be in the directory RESULTS_BURKHOLDERIA_1. 
+
+(2) Second ancestor:
+python ../../src/MASTER/anges_CAR.py PARAMETERS_BURKHOLDERIA_2
+or 
+python ../../src/MASTER/anges_CAR_UI.py &
+then load the parameters file PARAMETERS_BURKHOLDERIA_2 and run the script
+
+The results will be in the directory RESULTS_BURKHOLDERIA_2. 

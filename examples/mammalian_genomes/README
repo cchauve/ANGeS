@@ -1,0 +1,67 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+This directory contains examples of inferring the organization of
+ancestral boreoeutherian and amniote genomes. 
+
+To run an analysis of a data set, defined by a parameter file <PARAMETER_FILE>, 
+
+python ../../src/MASTER/anges_CAR.py <PARAMETERS_FILE>
+or 
+python ../../src/MASTER/anges_CAR_UI.py &
+then load the parameters file <PARAMETERS_FILE> and run the script
+
+The data are taken from three sources.
+
+(1) MARKERS_OUANGRAOUA_ET_AL_2011 is a set of unique and universal
+markers taken from (Ouangraoua et al., Reconstructing the architecture
+of the ancestral amniote genome. Bioinformatics
+27(19):2664-2671. 2011).
+
+The species tree SPECIES_TREE_OUANGRAOUA_ET_AL_2011_BOREOEUTHERIAN is
+used for reconstucting the ancestral boreoeutherian genome.  The
+species tree SPECIES_TREE_OUANGRAOUA_ET_AL_2011_AMNIOTE is used for
+reconstucting the ancestral amniote genome.
+
+The boreoeutherian ancestor is inferred using
+- the "linear chromosomes with telomeres" model and the heuristic
+approach (PARAMETERS_OUANGRAOUA_ET_AL_2011_BOREOEUTHERIAN_TEL_HEUR),
+- the "linear chromosomes" model and the spectral seriation
+approach (PARAMETERS_OUANGRAOUA_ET_AL_2011_BOREOEUTHERIAN_SERIATION).
+
+The amniote ancestor is inferred using the "linear chromosomes with
+telomeres" model and the branch-and-bound approach
+(PARAMETERS_OUANGRAOUA_ET_AL_2011_AMNIOTE_TEL_BAB).
+
+(2) MARKERS_GAVRANOVIC_ET_AL_2011 is a set of unique but not universal
+markers taken, together with the species tree
+SPECIES_TREE_GAVRANOVIC_ET_AL_2011, from (Gavranovic et al., Mapping
+ancestral genomes with massive gene loss: a matrix sandwich
+problem. Bioinformatics 27:i257-i265, proceedings of ISMB/ECCB
+2011). These markers are taken from the amniotes PECAN whole-genome
+alignments of Ensembl 58: alignments with occurrences in at least two
+species whose evolutionary path contains the ancestral boreoeutherian
+and with all occurrences of 50Kb at least have been used as markers.
+
+Being non-universal, these data are analyzed using the spectral
+seriation approach, with ACS being corrected with approach 2 (adding
+markers spanned by intervals as 1s and markers missing in both species
+by Xs). The results are in directory GAVRANOVIC_ET_AL_2011_SERIATION.
+
+(3) MARKERS_MA_ET_AL_2006 is a set of markers that are ingroup-unique
+and ingroup-universal, taken from (Ma et al., Reconstructing
+Contiguous Regions of an Ancestral Genome. Genome Research 16:
+1557-1565. 2006). 
+
+As markers do overlap (see MARKERS_MA_ET_AL_2006_OVERLAPS, obtained by
+the command 
+python ../../src/MARKERS/MARKERS_check_for_overlaps_markers.py \
+       MARKERS_MA_ET_AL_2006 MARKERS_MA_ET_AL_2006_OVERLAPS
+) markers are not doubled.
+
+In MA_ET_AL_2006_BOREOEUTHERIAN_HEUR, no correction for missing marker
+was applied and the greedy heuristic was used to infer the ancestral
+map. In MA_ET_AL_2006_BOREOEUTHERIAN_SERIATION, the missing markers
+were added as X's and the spectral seriation approach was used to
+infer the ancestral map, with alpha parameter 0.5.

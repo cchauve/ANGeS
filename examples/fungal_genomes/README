@@ -1,0 +1,27 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+This directory contains examples of inferring the organization of an
+ancestral fungal genome. The data, files MARKERS and SPECIES_TREE are
+taken from (Gavranovic et al, Yeast ancestral genome reconstructions:
+the possibilities of computational methods II. J. Comput. Biol. 
+17:1097-1112. 2010).
+
+The markers in the file MARKERS are unique and universal.
+
+(1) Results using the chromosome model "linear chromosomes with
+telomeres" and the branch-and-bound approach:
+
+python ../../src/MASTER/anges_CAR.py PARAMETERS_TEL_BAB
+or 
+python ../../src/MASTER/anges_CAR_UI.py &
+then load the parameters file PARAMETERS_TEL_BAB and run the script
+
+The results will be in directory TEL_BAB
+
+(2) PARAMETERS_TEL_HEUR: results using the chromosome model "linear
+chromosomes with telomeres" and the greedy heuristic approach.
+
+(3) PARAMETERS_SERIATION: results using the spectral seriation
+approach.

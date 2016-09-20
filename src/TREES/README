@@ -1,0 +1,6 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+TREES_list_species.py:       list sets of species (all, ingroups, outgroups) from a species tree
+TREES_list_species_pairs.py: list all informative pairs from a species tree

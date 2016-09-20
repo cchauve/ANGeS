@@ -1,0 +1,51 @@
+# May 4, 2012
+#
+# Inferring CARs from orthology blocks and species tree
+#
+# Usage: python [DIR]anges_CAR.py parameters_file
+# where
+# [DIR]anges_CAR.py is the path to the file anges_CAR.py
+# parameters_file is a file formatted as below
+#
+#
+# --- Input files -----------------------------------------
+#
+markers_file MARKERS_BURKHOLDERIA_1
+tree_file SPECIES_TREE_BURKHOLDERIA_1
+#
+# ASSUMPTIONS: (1) no WGD (2) fully resolved species tree
+# 
+# --- Output options -----------------------------------------
+#
+output_directory RESULTS_BURKHOLDERIA_1
+output_ancestor BANC1
+#
+# --- Markers options -----------------------------------------
+#
+markers_doubled 0      # 0 = original markers, 1 = doubled markers
+markers_unique 1       # 0 = repeated markers allowed, 1 = ingroup unique, 2 = unique
+markers_universal 2    # 0 = missing markers allowed, 1 = ingroup universal, 2 = universal
+#
+# --- ACS options -----------------------------------------
+#
+#acs_pairs PAIRS  [ACS_SPECIES_PAIRS_FILE_NAME] # name of file containing the species pairs to compare
+acs_sa 1           # supported adjacencies: 0 = not computed, 1 = computed
+acs_ra 0           # reliable adjacencies: 0 = not computed, 1 = computed
+acs_sci 0          # strong common intervals: 0 = not computed, 1 = computed 
+acs_mci 0          # maximal common intervals: 0 = not computed, 1 = computed
+acs_aci 0          # all common intervals: 0 = not computed, 1 = computed
+#acs_file ACS   [ACS_FILE_NAME] # ACS provided by user
+acs_weight 1       # weighting ACS: 1 = linear interpolation - CURRENTLY MANDATORY
+#acs_correction [0/1/2]    # Correcting for missing markers: 0 = none, 1 = adding markers spanned by intervals, 2 = X
+#
+# --- C1P model -----------------------------------------
+#
+c1p_linear 0   # 1 for working with linear chromosomes
+c1p_circular 1 # 1 for working with a unique circular chromosomes
+# ---Telomeres (model+optimization) -----------------------------------------
+c1p_telomeres 0          # CURRENTLY NOT IMPLEMENTED
+# --- C1P optimization options -----------------------------------------
+c1p_heuristic 1    # Using a greedy heuristic
+c1p_bab 0          # Using a branch-and-bound
+c1p_spectral 0     # Using spectral seriation CURRENTLY NOT IMPLEMENTED
+# END

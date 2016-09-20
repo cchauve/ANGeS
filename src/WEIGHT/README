@@ -1,0 +1,9 @@
+# ANGES 1.01, reconstruction ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+WEIGHT_weight_linear_interpolation.py: takes a set of ACS and weights each of them using a linear  interpolation(Fitch) algorithm based
+on their occurrence in extant species. If the markers are doubled, adjacencies between two extremities of a same initial marker receive
+a large weight ensuring they will always be chosed by the branch-and-boun or heuristic C1P scripts.
+
+weight.py: implementation of the algorithm used in the script above.

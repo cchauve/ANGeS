@@ -1,0 +1,6 @@
+# ANGES 1.01, reconstructing ANcestral GEnomeS maps
+# July 2012.
+# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+
+bm.py:    storing and manipulationg binary and ternary matrices
+sort.py:  generic sorting function

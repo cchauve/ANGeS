@@ -1,0 +1,52 @@
+# Parameters File
+# Project: NON_DUP_YEAST
+# Date: 2012-05-03
+#
+## Input files
+#
+markers_file MARKERS # file name for markers
+tree_file SPECIES_TREE # file name for species tree
+#
+## Output options
+#
+output_directory SERIATION # directory name
+output_ancestor NON_DUP_YEAST # ancestor name
+#
+## Markers options
+#
+markers_doubled 0 # 0 = original markers, 1 = doubled markers
+markers_unique 2 # 0 = repeated markers allowed, 1 = ingroup unique, 2 = unique
+markers_universal 2 # 0 = missing markers allowed, 1 = ingroup universal, 2 = universal
+#
+## ACS options
+#
+#acs_pairs  # name of file containing the species pairs to compare
+acs_sa 1 # supported adjacencies: 0 = not computed, 1 = computed
+acs_ra 0 # reliable adjacencies: 0 = not computed, 1 = computed
+acs_sci 1 # strong common intervals: 0 = not computed, 1 = computed
+acs_mci 1 # maximal common intervals: 0 = not computed, 1 = computed
+acs_aci 0 # all common intervals: 0 = not computed, 1 = computed
+#acs_file  # ACS provided by user
+acs_weight 1 # weighting ACS: 1 = linear interpolation
+acs_correction 0 # Correcting for missing markers: 0 = none, 1 = adding markers spanned by intervals, 2 = X, 3 = both
+#
+## C1P model
+#
+c1p_linear 1 # 1 f or working with linear chromosomes
+c1p_circular 0 # 1 for working with a unique circular chromosomes
+#
+## Telomeres (model+optimization)
+#
+c1p_telomeres 0 # 0: no telomere, 1: added after optimization (greedy heuristic), 2: added after optimization (bab), 3: added during optimization (bab)
+#
+## C1P optimization options
+#
+c1p_heuristic 0 # Using a greedy heuristic
+c1p_bab 0 # Using a branch-and-bound
+c1p_spectral 1 # Using spectral seriation
+#
+## Spectral seriation options
+#
+c1p_spectral_alpha 1.0 # Spectral seriation alpha value
+#
+# END
