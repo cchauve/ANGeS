@@ -1,10 +1,10 @@
 # ANGES 1.01, reconstructing ANcestral GEnomeS maps
-# Program: July 2012.
-# Documentation: August 2014 (v2)
-# Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
+## Program: July 2012.
+## Documentation: August 2014 (v2)
+## Contact: Cedric Chauve (Dept. Mathematics, Simon Fraser University), cedric.chauve@sfu.ca
 
 
-1. WHAT IS ANGES?
+## 1. WHAT IS ANGES?
 
 ANGES is a suite of Python scripts aimed at reconstructing ancestral
 genome maps from conserved genomic segments in extant genomes,
@@ -52,8 +52,7 @@ for the consecutive-ones property with multiplicity. In CPM 2011,
 Lecture Notes in Comput. Sci. 6661:90–103, 2011.
 
 
-2. INSTALLING ANGES.
-
+## 2. INSTALLING ANGES.
 
 ANGES is composed of a set of Python scripts, located in the src
 directory, and nothing needs to be done for its installation.
@@ -65,8 +64,7 @@ library for the graphical interface
 (http://wiki.python.org/moin/TkInter).
 
 
-3. USING ANGES.
-
+## 3. USING ANGES.
 
 With the graphical interface: 
 python src_path/MASTER/anges_CAR_UI.py
@@ -80,8 +78,7 @@ Detailed instructions are provided in the manual anges_1.0.pdf and in
 the README files in the examples directories.
 
 
-4. DIRECTORY STRUCTURE.
-
+## 4. DIRECTORY STRUCTURE.
 
 src:      directory containing the python code
 
