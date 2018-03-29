@@ -5,7 +5,6 @@
 
 
 1. WHAT IS ANGES?
-=================
 
 ANGES is a suite of Python scripts aimed at reconstructing ancestral
 genome maps from conserved genomic segments in extant genomes,
@@ -54,7 +53,7 @@ Lecture Notes in Comput. Sci. 6661:90–103, 2011.
 
 
 2. INSTALLING ANGES.
-====================
+
 
 ANGES is composed of a set of Python scripts, located in the src
 directory, and nothing needs to be done for its installation.
@@ -67,7 +66,7 @@ library for the graphical interface
 
 
 3. USING ANGES.
-===============
+
 
 With the graphical interface: 
 python src_path/MASTER/anges_CAR_UI.py
@@ -82,6 +81,8 @@ the README files in the examples directories.
 
 
 4. DIRECTORY STRUCTURE.
-=======================
+
+
 src:      directory containing the python code
+
 examples: a few examples using real data
